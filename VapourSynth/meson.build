@@ -69,7 +69,7 @@ if host_machine.system() == 'windows'
   endif
 endif
 
-shared_module('vslsmashsource', sources,
+library('vslsmashsource', sources,
   dependencies: deps,
   install: true,
   install_dir: join_paths(vapoursynth_dep.get_pkgconfig_variable('libdir'), 'vapoursynth'),
