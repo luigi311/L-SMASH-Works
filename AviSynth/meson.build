@@ -74,7 +74,7 @@ if host_machine.system() == 'windows'
   add_project_arguments('-D__USE_MINGW_ANSI_STDIO', language: ['c', 'cpp'])
 endif
 
-shared_module('lsmashsource', sources,
+library('lsmashsource', sources,
   dependencies: deps,
   install: true,
   install_dir: join_paths(avisynth_dep.get_pkgconfig_variable('libdir'), 'avisynth'),
